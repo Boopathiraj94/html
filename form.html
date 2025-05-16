@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: #e4782055;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Forms</h1>
+
+    <!-- 
+     <form></form>
+         form is used to collecting the user input and send to the server for some process 
+     Attribute
+     =========
+     action => server file name
+
+     method => post =>hidden , get => visible
+      
+    label => used to asking the questions to user 
+     input => single line input 
+
+     input type="text"  => single line input
+
+     input type="submit" => it is act like submit button
+
+     method => get by default , visible the user input in url box
+     methon => post , hidden the user input in url box
+
+     value => only purpose add the initial value
+
+     id=> unique name for id attribute (very usefull in js and css)
+    -->
+
+    <fieldset>
+        <legend>Student Details</legend>
+
+        <details>
+            <summary>Lorem</summary>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, praesentium. Corrupti minima impedit,
+            ipsa molestiae similique nostrum perferendis assumenda sit at quas in fuga ipsum nisi, vitae, neque ex quod?
+        </details>
+        <form action="server.html" method="get">
+
+            <label for="yourname">Enter your Name</label>
+            <input type="text" name="first_name" value="" id="yourname"> <br>
+
+            <label for="fathername">Enter Your Father Name</label>
+            <input type="text" name="father_name" id="fathername"> <br>
+
+            <label for="">Choose the Gender</label>
+            <input type="radio" name="gender" value="Male"> MALE <input type="radio" name="gender" value="Female">
+            FEMALE<br>
+
+            <label for="">Choose your course</label> <br>
+            <input type="checkbox" name="courses" value="Java"> Java <br>
+            <input type="checkbox" name="courses" value="C"> C <br>
+            <input type="checkbox" name="courses" value="C++"> C++ <br>
+            <input type="checkbox" name="courses" value="NODE JS"> NODE JS <br>
+            <br>
+            <br>
+
+            <!-- 
+  select is used to choose your option
+
+  <select></select>
+
+  option => is child element for the select 
+
+  In option Attribute
+  ====================
+  selected => it is used to set the priority for option (set first)
+  value => is used to add the initial value
+  ---------------------------
+  In select attribute
+  =====================
+  multiple => it is used to choose multiple options at a time
+  size => it is used to visible the option in select element
+
+  Optgroup
+  ==========
+  <optgroup> </optgroup>
+  label attribute => add the title to the option group
+ -->
+
+            <label for="Degree">Degree Courses</label>
+            <select name="" id="Degree" multiple size="5">
+                <option value="">Choose your option</option>
+                <optgroup label="Engineering">
+                    <option value="ME">ME</option>
+                    <option value="BE">BE</option>
+                </optgroup>
+                <optgroup label="Arts & science">
+                    <option value="Bsc">Bsc</option>
+                    <option value="Msc">Msc</option>
+                    <option value="Bcom">Bcom</option>
+                    <option value="Bed">Bed</option>
+                </optgroup>
+
+            </select> <br>
+
+
+            <!-- 
+            textarea
+            =========
+            input => single line
+            textarea => multiline input
+
+            <textarea> </textarea>
+
+            rows => only accept no of lines
+            cols => only accept no of letters
+            name
+            id
+            class
+
+            -->
+            <label for="">Address</label> <br>
+            <textarea name="" id="" rows="2" cols="10">
+
+            </textarea>
+
+
+            <button type="button">Go</button>
+
+            <button type="submit">Submit</button>
+
+            <input type="submit">
+
+            <input type="button" value="Go">
+
+
+
+
+
+
+
+
+
+
+
+            <br>
+            <br>
+
+            <label for="">Date of birth</label> <br>
+            <input type="date" value="2025-05-15"> <br>
+
+            <input type="time"> <br>
+
+            <input type="datetime-local"> <br>
+
+            <input type="week"> <br>
+
+            <input type="month"> <br>
+
+            <input type="file"> <br>
+
+            <input type="email"> <br>
+
+            <input type="number"> <br>
+
+            <input type="tel" name="" value=""> <br>
+
+            <input type="search"> <br>
+
+            <input type="url"> <br>
+
+            <input type="color"> <br>
+
+            <input type="range">
+
+            <input type="submit">
+
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
